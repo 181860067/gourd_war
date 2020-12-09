@@ -1,6 +1,9 @@
+
 import javafx.scene.image.Image;
 
 public class CalabashBrother extends Creature implements AttackInterface {
+
+    int RemoteAttackTimes;
 
     CalabashBrother(String name, int pos_x, int pos_y, direction Direction, int HitPoint, int Attack, int Defence) {
         super(name, pos_x, pos_y, Direction, HitPoint, Attack, Defence);
@@ -43,4 +46,8 @@ public class CalabashBrother extends Creature implements AttackInterface {
     }
 
     // 技能
+
+    public void AddRemoteAttack(int times) {
+        RemoteAttackTimes += times;
+    }
 }

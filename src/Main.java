@@ -1,19 +1,14 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Main extends Application
-{
+public class Main extends Application {
     @Override
-    public void start(Stage stage) throws Exception
-    {
+    public void start(Stage stage) throws Exception {
         new SceneSwitch(stage).start();
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Main.launch();
     }
-
-
 
 }

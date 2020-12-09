@@ -46,6 +46,18 @@ public class Creature {
         return name;
     }
 
+    public int getHitPoint() {
+        return HitPoint;
+    }
+
+    // 被攻击
+    public void Injured(int attack) {
+
+    }
+
+    public void getTreasure() {
+        // 根据宝物类型
+    }
 }
 // 属性：
 // 是否还活着
