@@ -1,3 +1,4 @@
+package creature;
 
 public class Creature {
     boolean isAlive;// 判断是否活着
@@ -7,6 +8,7 @@ public class Creature {
     int HitPoint;// 生命值
     int Attack;// 攻击力
     int Defence;// 防御力
+    int RemoteAttackTimes;// 远程攻击
     // 位置相关数据结构--TODO
 
     enum direction {
@@ -55,9 +57,19 @@ public class Creature {
 
     }
 
-    public void getTreasure() {
+    public void getTreasure(int hp, int attack, int defence, int times, int speed) {
         // 根据宝物类型
+        HitPoint += hp;
+        Attack += attack;
+        Defence += defence;
+        RemoteAttackTimes += times;
+        Speed += speed;
     }
+
+    public void showImage() {
+
+    }
+
 }
 // 属性：
 // 是否还活着
